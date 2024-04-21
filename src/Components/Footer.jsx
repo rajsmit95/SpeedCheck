@@ -9,7 +9,7 @@ function Footer() {
     {/* Let's Design  the footer */}
     <footer className='py-5 px-10 bg-black text-[#fff] flex flex-col md:flex-row justify-between items-center'>
         <div>
-            <p className='text-xl font-[500]'>Copyright@<span className='text-yellow-600 text-[18px]'>SpeedChecker.com</span></p>
+            <p className='text-xl font-[500]'>Copyright@<span className='text-yellow-600 text-[18px]'>speedcheck.site</span></p>
         </div>
         <div className='pt-5 md:pt-0'>
             <ul className='flex flex-row justify-between items-center w-[220px]'>

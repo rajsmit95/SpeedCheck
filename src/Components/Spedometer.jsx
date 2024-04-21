@@ -66,7 +66,6 @@ function Speedometer() {
         <ReactSpeedometer
           maxValue = {300}
           value={runningButton ? speedometerValue : 0}
-          needleColor="#F3E5AB"
           startColor="green"
           segments={10}
           endColor="blue"
