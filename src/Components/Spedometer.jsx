@@ -64,12 +64,13 @@ function Speedometer() {
       <div  className="mx-auto  w-full md:w-[500px]">
         {error && <p>Error: {error.message}</p>}
         <ReactSpeedometer
-          maxValue={100}
+          maxValue = {300}
           value={runningButton ? speedometerValue : 0}
-          needleColor="red"
+          needleColor="#F3E5AB"
           startColor="green"
           segments={10}
           endColor="blue"
+          textColor = '#fff'
           needleHeightRatio = {0.8}
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
