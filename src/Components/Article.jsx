@@ -20,7 +20,7 @@ function Article() {
     {
       title: "Ping Speed",
       description:
-        "It is the reaction time of your internet connection - how fast you get a response after you have sent a request. A fast ping means a more responsive connection. Ping is measured in milliseconds (ms).",
+        "It is the hey time of your internet connection - how fast you get a response after you have sent a request. A fast ping means a more responsive connection. Ping is measured in milliseconds (ms).",
       titleIcon: PingIcon,
     },
   ];
