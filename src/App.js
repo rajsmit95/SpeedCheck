@@ -1,19 +1,20 @@
 import React from 'react'
 import './App.css';
-import Navbar from './Components/Navbar';
-import Spedometer from './Components/Spedometer';
-import Article from './Components/Article';
-import Footer from './Components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Blog from './Components/Blog/Blog'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Spedometer/>
-      <Article />
-      <Footer />
-          
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          {/* Add more routes as needed for other components */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
