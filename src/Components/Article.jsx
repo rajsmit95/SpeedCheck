@@ -34,7 +34,7 @@ function Article() {
           <div className="p-5">
             <h3 className="text-slate-100 py-1 text-3xl font-[600] leading-10">What Do We Measure In An Internet Speed Test?</h3>
             <p className="text-slate-200 text-[20px] leading-10">
-              Speed.one Internet Speed Test checks how fast is your internet
+              Speed.check Internet Speed Test checks how fast is your internet
               connection speed and bandwidth for broadband WiFi and mobile
               networks.
             </p>
