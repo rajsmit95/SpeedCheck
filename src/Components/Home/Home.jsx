@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import Spedomter from '../Spedometer'
 import Article from '../Article'
 import Footer from '../Footer'
+import Seosection from '../Seosection'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Navbar />
       <Spedomter />
       <Article />
+      <Seosection />
       <Footer />
     </div>
   )
