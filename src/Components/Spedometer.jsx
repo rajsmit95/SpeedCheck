@@ -61,7 +61,7 @@ function Speedometer() {
   
   return (
     <div className="p-5" style={{ textAlign: "center" }}>
-      <div  className="mx-auto  w-full md:w-[500px]">
+      <div  className="mx-auto w-full md:w-[500px]">
         {error && <p>Error: {error.message}</p>}
         <ReactSpeedometer
           maxValue = {300}
@@ -73,7 +73,7 @@ function Speedometer() {
           needleHeightRatio = {0.8}
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
-          width = {screenSize > 500 ? 500 : 350}
+          width = {screenSize > 500 ? 500 : 330}
           height= {screenSize > 500 ? 300 : 200}
           style = {cousTomStyle}
                     
