@@ -73,7 +73,7 @@ function Speedometer() {
           needleHeightRatio = {0.8}
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
-          width = {screenSize > 500 ? 500 : 330}
+          width = {screenSize > 500 ? 500 : 300}
           height= {screenSize > 500 ? 300 : 200}
           style = {cousTomStyle}
                     

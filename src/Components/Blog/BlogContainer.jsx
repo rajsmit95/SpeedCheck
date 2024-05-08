@@ -20,26 +20,32 @@ function BlogContainer() {
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:4,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:5,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:5,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:7,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:8,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
     {
+        id:9,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
