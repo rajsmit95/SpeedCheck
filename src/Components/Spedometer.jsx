@@ -71,7 +71,7 @@ function Speedometer() {
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
           labelFontSize = '10px'
-          width = {screenSize > 500 ? 500 : 250}
+          width = {screenSize > 500 ? 500 : 200}
           height= {screenSize > 500 ? 300 : 200}
                     
         />
