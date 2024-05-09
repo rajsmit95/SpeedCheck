@@ -58,7 +58,7 @@ function Speedometer() {
   
   return (
     <div className="p-2 md:p-5" style={{ textAlign: "center" }}>
-      <div  className="mx-auto w-full md:w-[500px]">
+      <div  className="mx-auto w-full">
         {error && <p>Error: {error.message}</p>}
         <ReactSpeedometer
           maxValue = {300}
@@ -71,13 +71,14 @@ function Speedometer() {
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
           labelFontSize = '10px'
-          width = {screenSize > 500 ? 500 : 200}
-          height= {screenSize > 500 ? 300 : 200}
+          ringWidth = {screenSize > 500 ? 30 : 3}
+          width = {screenSize > 500 ? 500 : 230}
+          height= {screenSize > 500 ? 300 : 160}
                     
         />
       </div>
       <div>
-        <button onClick={handleClick} className="px-10 py-3 border-[1px] bg-green-400 font-[600] border-green-400 rounded-md hover:bg-transparent hover:text-slate-100  my-5 duration-150 ease-in-out">
+        <button onClick={handleClick} className="px-10 py-3 border-[1px] bg-green-400 font-[600] border-green-400 rounded-md hover:bg-transparent hover:text-slate-100   duration-150 ease-in-out">
           {runningButton ? "Testing....." : "Start Test"}
         </button>
       </div>

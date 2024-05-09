@@ -29,7 +29,7 @@ function Article() {
     <div>
       <section>
     
-        <div className="text-[#fff]">
+        <div className="text-[#fff] text-center">
           {/* Header-section */}
           <div className="p-5">
             <h3 className="text-slate-100 py-1 text-3xl font-[600] leading-10">What Do We Measure In An Internet Speed Test?</h3>

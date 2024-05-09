@@ -3,8 +3,8 @@ import React from "react";
 function Seosection() {
   return (
     <div className="p-5 md:p-10">
-      <h3 className="text-[35px] md:text-[50px] p-1 md:p-2 font-[800] text-slate-50">What we do ?</h3>
-      <p className=" text-sm md:text-xl font-[300] p-1 md:p-2 text-[#ccc] leading-8">
+      <h3 className="text-[35px] md:text-[50px] p-1 md:p-2 font-[800] text-slate-50 text-center">What we do ?</h3>
+      <p className=" text-sm md:text-xl font-[300] p-1 md:p-2 text-[#ccc] leading-8 text-center">
         Welcome to Speedcheck, your trusted partner in ensuring seamless
         connectivity through our comprehensive suite of internet speed check
         solutions. At Speedcheck, we understand the critical role that internet
