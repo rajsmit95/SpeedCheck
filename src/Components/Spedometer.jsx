@@ -51,16 +51,13 @@ function Speedometer() {
   };
 
 
-  const cousTomStyle = {
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  }
+
 
   // Determine which value to display based on test completion and running status
   const speedometerValue = download.isComplete ? upload.result.meanClientMbps : download.result.meanClientMbps
   
   return (
-    <div className="p-5" style={{ textAlign: "center" }}>
+    <div className="p-2 md:p-5" style={{ textAlign: "center" }}>
       <div  className="mx-auto w-full md:w-[500px]">
         {error && <p>Error: {error.message}</p>}
         <ReactSpeedometer
@@ -73,9 +70,9 @@ function Speedometer() {
           needleHeightRatio = {0.8}
           needleTransitionDuration={200}
           needleTransition = 'easeLinear'
-          width = {screenSize > 500 ? 500 : 300}
+          labelFontSize = '10px'
+          width = {screenSize > 500 ? 500 : 250}
           height= {screenSize > 500 ? 300 : 200}
-          style = {cousTomStyle}
                     
         />
       </div>

@@ -9,7 +9,7 @@ import Singlepost from './Components/Blog/Singlepost';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog/>} />
