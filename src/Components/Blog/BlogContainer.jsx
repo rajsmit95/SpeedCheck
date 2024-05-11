@@ -56,7 +56,7 @@ function BlogContainer({ visibleCount }) {
       {
         BlogData.slice(0, visibleCount).map((item) => {
           return (
-            <div key={item.id} className='w-[350px] h-[350px] rounded-2xl bg-slate-800 shadow-lg'>
+            <div key={item.id} className='w-[350px] h-[350px] mx-auto rounded-2xl bg-slate-800 shadow-lg'>
               <div className='w-full h-[70%] rounded-t-2xl'>
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
