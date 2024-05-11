@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import BlogContainer from "./BlogContainer";
 
 function Singlepost() {
   const { id } = useParams();
@@ -92,8 +93,9 @@ function Singlepost() {
   return (
     <div>
       <Navbar />
-      <div className="w-full md:w-[800px] mx-auto my-10 p-4">
-        <div className="w-full h-[600px]">
+      <div className="p-2">
+      <div className="w-full md:w-[800px] shadow-lg mx-auto my-10 p-4 border border-slate-800 rounded-lg">
+        <div className="w-full h-[400px] md:h-[600px]">
           <img
             src={blogPost.imgLink}
             alt="images"
@@ -101,13 +103,19 @@ function Singlepost() {
           />
         </div>
         <div className="w-full">
-          <h2 className="text-slate-100 p-3 text-[30px] md:text-[40px] font-[700]">
+          <h2 className="text-slate-800 p-3 text-[25px] md:text-[40px] font-[700]">
             {blogPost.title}
           </h2>
-          <p className="text-slate-50 p-3 text-sm font-[300] leading-7">
+          <p className="text-slate-800 p-3 text-sm font-[300] leading-7">
             {blogPost.content}
           </p>
         </div>
+      </div>
+      </div>
+        {/* Display related blogs */}
+        <h3 className="text-[25px] md:text-[35px] font-semibold text-center">Related Blogs</h3>
+      <div className="w-full md:w-[800px] grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-10  mx-auto my-10 p-4 border border-slate-800 rounded-lg">
+        <BlogContainer visibleCount={4} currentBlogId={parseInt(id)} />
       </div>
       <Footer />
     </div>

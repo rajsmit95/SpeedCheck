@@ -7,7 +7,7 @@ import Seosection from '../Seosection'
 
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#090a3a"}}>
       <Navbar />
       <Spedomter />
       <Article />

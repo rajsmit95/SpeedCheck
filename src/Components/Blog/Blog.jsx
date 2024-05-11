@@ -1,26 +1,33 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import BlogContainer from './BlogContainer'
-import Footer from '../Footer'
+import React, { useState } from 'react';
+import Navbar from '../Navbar';
+import BlogContainer from './BlogContainer';
+import Footer from '../Footer';
 
 function Blog() {
+  const [visibleCount, setVisibleCount] = useState(6); // Initial count of visible items
+
+  const handleLoadMore = () => {
+    // Increment the visible count by the number of items you want to load each time
+    setVisibleCount(prevCount => prevCount + 3); // You can adjust this value as per your requirement
+  };
+
   return (
     <div>
-        <Navbar  />
-        <h3 className='text-[50px] font-900 text-slate-300 p-3'>Blog</h3>
-        {/* This is blog-conatiner */}
-        <div className='w-[1200px]  mx-auto my-6 grid grid-cols-3 gap-y-4 gap-x-10 p-2'>
-            <BlogContainer />
-        </div>
-        {/* This is button */}
-        <div className='my-2 py-5'>
-            <button className='bg-slate-600 p-3 rounded-lg text-slate-200 font-[700]'>Load more</button>
-        </div>
-        <div>
-            <Footer />
-        </div>
+      <Navbar />
+      <h3 className='text-[35px] md:text-[60px] font-900 text-slate-800 p-5 text-center'>Our's Blog</h3>
+      {/* This is blog-container */}
+      <div className='w-full md:w-[1200px] mx-auto my-6 grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-10 p-2'>
+        <BlogContainer visibleCount={visibleCount} />
+      </div>
+      {/* This is button */}
+      <div className='my-2 py-5 text-center'>
+        <button className='bg-slate-600 p-3 rounded-lg text-slate-200 font-[700]' onClick={handleLoadMore}>Load more</button>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Blog
+export default Blog;
