@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function BlogContainer({ visibleCount }) {
+    const location = useLocation()
+    // Now Check  the rounting
+     const isBlog = location.pathname === "/blog";
   // Assuming BlogData is defined here as you provided in the previous code
   const BlogData =[
     {
@@ -56,12 +59,12 @@ function BlogContainer({ visibleCount }) {
       {
         BlogData.slice(0, visibleCount).map((item) => {
           return (
-            <div key={item.id} className='w-[350px] h-[350px] mx-auto rounded-2xl bg-slate-800 shadow-lg'>
-              <div className='w-full h-[70%] rounded-t-2xl'>
+            <div key={item.id} className={`w-[350px] h-auto mx-auto rounded-2xl ${isBlog ? "bg-slate-800 shadow-lg" : "bg-none shadow-none"}`}>
+              <div className={`'w-full h-[70%] rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
               <div className='mt-5 text-center'>
-                <Link to={`/blog/${item.id}`} className='text-[25px] hover:underline font-[600] px-1 mt-2 text-slate-100'>{item.title}</Link>
+                <Link to={`/blog/${item.id}`} className={`text-[25px] hover:underline font-[600] px-1 mt-2 ${isBlog ? "text-slate-100": "text-slate-700"}`}>{item.title}</Link>
               </div>
             </div>
           );

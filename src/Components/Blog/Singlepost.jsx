@@ -114,7 +114,7 @@ function Singlepost() {
       </div>
         {/* Display related blogs */}
         <h3 className="text-[25px] md:text-[35px] font-semibold text-center">Related Blogs</h3>
-      <div className="w-full md:w-[800px] grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-10  mx-auto my-10 p-4 border border-slate-800 rounded-lg">
+      <div className="w-full md:w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-10  mx-auto my-10 p-4 rounded-lg">
         <BlogContainer visibleCount={4} currentBlogId={parseInt(id)} />
       </div>
       <Footer />
