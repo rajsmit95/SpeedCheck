@@ -59,12 +59,12 @@ function BlogContainer({ visibleCount }) {
       {
         BlogData.slice(0, visibleCount).map((item) => {
           return (
-            <div key={item.id} className={`w-[350px] h-auto mx-auto rounded-2xl ${isBlog ? "bg-slate-800 shadow-lg" : "bg-none shadow-none"}`}>
+            <div key={item.id} className={`w-[350px] h-auto mx-auto rounded-2xl ${ isBlog ? "bg-[#090a3a] shadow-lg" : "bg-none shadow-none"}`}>
               <div className={`'w-full h-[70%] rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
               <div className='mt-5 text-center'>
-                <Link to={`/blog/${item.id}`} className={`text-[25px] hover:underline font-[600] px-1 mt-2 ${isBlog ? "text-slate-100": "text-slate-700"}`}>{item.title}</Link>
+                <Link to={`/blog/${item.id}`} className={`text-[25px] hover:underline font-[600] px-1 mt-2 ${isBlog ? "text-slate-100": "text-slate-700"}`}>{isBlog ? <p>{item.title}</p> : <li>{item.title}</li>}</Link>
               </div>
             </div>
           );
