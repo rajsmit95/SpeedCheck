@@ -8,19 +8,19 @@ function Article() {
     {
       title: "Download Speed",
       description:
-        "How fast information can transfer to you. It affects things like the duration it takes to download large files or display pages with many images. Download speed is measured in megabits per second (Mbps).",
+        "How quickly you can absorb knowledge. It has an impact on things like how long it takes to download big files or load pages with lots of photos. Megabits per second (Mbps) is a unit of measurement for download speed.",
       titleIcon: DownloadICon,
     },
     {
       title: "Upload Speed",
       description:
-        "How fast information can transfer from you. It affects things like how long it takes to post images to social media or send big files via email attachments. Upload speed is measured in megabits per second (Mbps).",
+        "How quickly you can impart information. It has an impact on things like the time it takes to transfer large files via email attachments or upload photographs to social media. Megabits per second (Mbps) are used to measure upload speed.",
       titleIcon: UploadIcon,
     },
     {
       title: "Ping Speed",
       description:
-        "It is the hey time of your internet connection - how fast you get a response after you have sent a request. A fast ping means a more responsive connection. Ping is measured in milliseconds (ms).",
+        "This refers to the reaction time of your internet connection, or the speed at which a request is answered. A more responsive connection is indicated by a quick ping. There are milliseconds (ms) in ping.",
       titleIcon: PingIcon,
     },
   ];
@@ -34,7 +34,7 @@ function Article() {
           <div className="p-5">
             <h3 className="text-slate-100 py-1 text-3xl font-[600] leading-10">What Do We Measure In An Internet Speed Test?</h3>
             <p className="text-slate-200 text-[20px] leading-10">
-              Speed.check Internet Speed Test checks how fast is your internet
+              Internet Speed Test checks how fast is your internet
               connection speed and bandwidth for broadband WiFi and mobile
               networks.
             </p>
