@@ -31,8 +31,8 @@ function BlogContainer({ visibleCount }) {
     },
     {
         id:5,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink : GenuisBoy,
+        title : 'The Future of Work: How AI is Reshaping Industries and Job Roles',
     },
     {
         id:5,
