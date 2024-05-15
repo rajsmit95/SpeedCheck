@@ -26,8 +26,8 @@ function BlogContainer({ visibleCount }) {
     },
     {
         id:4,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink :GenuisBoy,
+        title : 'AI and Healthcare: Revolutionizing Diagnosis, Treatment, and Patient Care',
     },
     {
         id:5,
@@ -35,7 +35,7 @@ function BlogContainer({ visibleCount }) {
         title : 'The Future of Work: How AI is Reshaping Industries and Job Roles',
     },
     {
-        id:5,
+        id:6,
         imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
         title : 'Mahendra Sing Dhoni',
     },
@@ -62,7 +62,7 @@ function BlogContainer({ visibleCount }) {
         BlogData.slice(0, visibleCount).map((item) => {
           return (
             <div key={item.id} className={`w-[350px] h-auto mx-auto rounded-2xl ${ isBlog ? "bg-[#090a3a] shadow-lg" : "bg-none shadow-none"}`}>
-              <div className={`'w-full h-[70%] rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
+              <div className={`'w-full h-[60%] rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
               <div className='mt-0 px-1'>
