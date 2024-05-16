@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import GenuisBoy from '../../assests/Genuis-guy.jpg'
+import Boy from '../../assests/Doctor.jpg'
 
 
 function BlogContainer({ visibleCount }) {
@@ -16,7 +17,7 @@ function BlogContainer({ visibleCount }) {
     },
     { 
         id:2,
-        imgLink : GenuisBoy,
+        imgLink : Boy,
         title : 'The Impact of AI on Everyday Life: From Virtual Assistants to Autonomous Vehicles',
     },
     {
