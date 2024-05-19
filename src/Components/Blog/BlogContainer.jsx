@@ -63,11 +63,11 @@ function BlogContainer({ visibleCount }) {
         BlogData.slice(0, visibleCount).map((item) => {
           return (
             <div key={item.id} className={`w-[350px] h-auto mx-auto rounded-2xl ${ isBlog ? "bg-[#090a3a] shadow-lg" : "bg-none shadow-none"}`}>
-              <div className={`'w-full h-[60%] rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
+              <div className={`'w-full h-auto rounded-t-2xl ${isBlog ? "block" : "hidden"}`}>
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
               <div className='mt-0 px-1'>
-                <Link to={`/blog/${item.id}`} className={`text-[20px] hover:underline font-[600] px-1  ${isBlog ? "text-slate-100": "text-blue-700 mb-0"}`}>{isBlog ? <p className='mb-5 line-clamp-2 text-center'>{item.title}</p> : <li className='text-left'>{item.title}</li>}</Link>
+                <Link to={`/blog/${item.id}`} className={`hover:underline font-[600] px-1  ${isBlog ? "text-slate-100": "text-blue-700 mb-0"}`}>{isBlog ? <p className='mb-5 line-clamp-2 text-center text-[20px]'>{item.title}</p> : <li className='text-left text-[16px] md:text-[18px] font-[500px] mb-[-30px]'>{item.title}</li>}</Link>
               </div>
             </div>
           );

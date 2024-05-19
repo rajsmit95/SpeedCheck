@@ -20,7 +20,7 @@ function Blog() {
       <Navbar />
       <h3 className='text-[35px] md:text-[60px] font-900 text-slate-800 p-5 text-center'>Our's Blog</h3>
       {/* This is blog-container */}
-      <div className={`w-full md:w-[1200px] mx-auto my-1 grid grid-cols-1 md:grid-cols-3 ${isBlog ? "gap-y-4" : "gap-y-0"} gap-x-10 p-2`}>
+      <div className={`w-full md:w-[1200px] mx-auto my-1 grid grid-cols-1 md:grid-cols-3 ${isBlog ? "gap-y-4 p-2 gap-x-10" : "gap-y-0 p-2 gap-x-4"}`}>
         <BlogContainer visibleCount={visibleCount} />
       </div>
       {/* This is button */}
