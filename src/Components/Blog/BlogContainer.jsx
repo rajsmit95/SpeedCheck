@@ -37,23 +37,23 @@ function BlogContainer({ visibleCount }) {
     },
     {
         id:6,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink : GenuisBoy,
+        title : 'AI in Finance: Transforming Banking, Investing, and Risk Management',
     },
     {
         id:7,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink : GenuisBoy,
+        title : 'Exploring the Intersection of AI and Creativity: From Art to Music Composition',
     },
     {
         id:8,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink : GenuisBoy,
+        title : 'The Role of AI in Environmental Conservation and Sustainability',
     },
     {
         id:9,
-        imgLink : "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
-        title : 'Mahendra Sing Dhoni',
+        imgLink : GenuisBoy,
+        title : 'AI in Education: Transforming Learning and Teaching Practices',
     },
 ]
 
@@ -67,12 +67,12 @@ function BlogContainer({ visibleCount }) {
                 <img src={item.imgLink} alt="imga_conati" className='w-full h-full rounded-t-2xl' />
               </div>
               <div className='mt-0 px-1'>
-                <Link to={`/blog/${item.id}`} className={`text-[20px] hover:underline font-[600] px-1  ${isBlog ? "text-slate-100": "text-slate-700"}`}>{isBlog ? <p className='mb-5 line-clamp-2 text-center'>{item.title}</p> : <li className='text-left'>{item.title}</li>}</Link>
+                <Link to={`/blog/${item.id}`} className={`text-[20px] hover:underline font-[600] px-1  ${isBlog ? "text-slate-100": "text-blue-700 mb-0"}`}>{isBlog ? <p className='mb-5 line-clamp-2 text-center'>{item.title}</p> : <li className='text-left'>{item.title}</li>}</Link>
               </div>
             </div>
           );
         })
-      }
+      } 
     </>
   );
 }
